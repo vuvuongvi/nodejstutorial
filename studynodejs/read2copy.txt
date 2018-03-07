@@ -1,0 +1,1 @@
+lấy dữ liệu từ file.js

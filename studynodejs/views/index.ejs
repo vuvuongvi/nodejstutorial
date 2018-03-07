@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Hello EJS</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <h1>hello EJS</h1>
+    <form method="POST" action = "/login">
+        UserName: <input type="text" name="username" />
+        <br />
+        Password: <input type="text" name="password" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+        $.ajax({
+            type: "POST",
+            url: "/loginjson",
+            data: JSON.stringify({fistName:"hoa", lastName:"mai"}),
+            dataType: "json",
+            contentType: "application/json"
+        });
+
+    </script>
+</body>
+
+</html>
